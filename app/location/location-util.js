@@ -31,24 +31,24 @@ const data = [
     },
     {
         location: "Mymensingh",
-        latitude: 24.747149,
+        latitude: 24.747148,
         longitude: 90.420273,
     },
     {
-        location: "Chittagong",
-        latitude: 22.347537,
-        longitude: 91.812332,
+        location: "Gazipur",
+        latitude: 23.999940,
+        longitude: 90.420273,
     }
 ];
 
 function getLocations(){
     return data
 }
-function getLocationByName(location){
-  if(!location) return undefined
-  const found=data.find((item)=>item.location.toLowerCase()===location.toLowerCase())
 
-  return found || {}
+function getLocationsByName(location){
+   if(!location) return null
+   const found=data.find((item)=>item.location.toLowerCase()===location.toLowerCase())
+   return found || {}
 }
 
-export {getLocations,getLocationByName}
+export{getLocations,getLocationsByName}

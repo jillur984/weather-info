@@ -1,8 +1,12 @@
+import LocationDetector from '@/components/LocationDetector'
 import React from 'react'
+
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <LocationDetector/>
+    </>
   )
 }
 
