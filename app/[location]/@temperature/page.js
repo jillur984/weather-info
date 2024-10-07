@@ -1,8 +1,9 @@
+import TemparatureComponent from '@/components/TemparatureComponent'
 import React from 'react'
 
-const TemperaturePage = () => {
+const TemperaturePage = ({params:{location},searchParams:{latitude,longitude}}) => {
   return (
-    <div>TemperaturePage</div>
+    <TemparatureComponent lat={latitude} lon={longitude}/>
   )
 }
 

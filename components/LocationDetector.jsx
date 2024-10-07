@@ -25,7 +25,7 @@ const LocationDetector = () => {
   }, [pathName, searchParams]);
 
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center h-screen bg-slate-700 text-white">
       {loading && (
         <>
           <Image src="/network.gif" alt="loading" height={500} width={500} />
